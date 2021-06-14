@@ -6,6 +6,29 @@
   box-sizing: border-box;
 }
 
+/* total width */
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 2px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
